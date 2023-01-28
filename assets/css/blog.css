@@ -27,7 +27,7 @@
     width: 25%;
     margin-left: 30px;
     font-size: 13px;
-    color: rgb(90, 89, 89)
+    color: rgb(90, 89, 89);
 }
 
 .duration {
@@ -46,9 +46,14 @@
     height: 20%;
 }
 
-.day img {
+.img {
     width: 20px;
+    height: 100%;
     margin-right: 15px;
+}
+
+.img img {
+    text-align: center;
 }
 
 .duration-day {
@@ -106,4 +111,5 @@
 .content {
     margin-top: 40px;
     font-size: 15px;
+    width: 100%;
 }
