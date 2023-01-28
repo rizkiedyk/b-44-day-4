@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2e6ea;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+
+nav {
+    height: 50px;
+    background-color: #f4f3f3;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 35px;
+}
+
+nav ul {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.myProject a {
+    color: #ec4d37
+}
+
+nav ul li a:hover {
+    color: rgb(85, 82, 82);
+    transition: 0.5s;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact button {
+    background-color: black;
+    margin-left: 80%;
+    height: 25px;
+    width: 100px;
+    border-radius: 15px;
+    border: none;
+}
+
+.contact button:hover {
+    background-color: rgb(116, 115, 115);
+    transition: 0.5s;
+}
+
+.contact button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+/* navbar end */
+
+
+/* card */
+.card {
+    background-color: white;
+    width: 80%;
+    height: 550px;
+    margin: 80px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card {
+    width: 80%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    width: 55%;
+    height: 70%;
+}
+
+
+.container-content {
+    font-size: 13px;
+}
+
+.anchor {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.container-contact {
+    background-color: #111727;
+    margin-right: 30px;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.container-contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-contact a:hover {
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.container-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cv a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-cv a:hover {
+    color: rgb(70, 68, 68);
+}
+
+.sosmed {
+    margin-top: 50px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ig, .fb, .twitter, .linked-in {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ig a, .fb a, .twitter a, .linked-in a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.ig:hover, .fb:hover, .twitter:hover, .linked-in:hover {
+    background-color: rgb(71, 70, 70);
+}
+
+.profil {
+    width: 40%;
+    height: 100%;
+    box-shadow: 0px 0px 10px;
+    border-radius: 8px;
+}
+
+.profil img {
+    width: 100%;
+    height: 85%;
+    border-radius: 8px;
+}
+
+.profil-bio {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* card end */
+
+
+
+/* form blog */
+.container-form {
+    width: 35%;
+    margin: 40px auto;
+}
+
+.container-form h2 {
+    text-align: center;
+}
+
+.name {
+    margin-top: 30px;
+}
+
+.date, .description, .checkbox, .image {
+    margin-top: 15px;
+}
+
+.form-blog input , .form-blog textarea {
+    margin-top: 10px;
+}
+
+#project-name , #description-box{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px;
+}
+
+.date {
+    width: 100%;
+    display: flex;
+}
+
+.start-date {
+    width: 48%;
+}
+
+#start-date, #end-date {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px;
+}
+
+.end-date {
+    width: 48%;
+    margin-left: 20px;
+}
+
+.form-checkbox {
+    display: flex;
+}
+
+.form-checkbox1 {
+    margin-right: 20px;
+}
+
+#input-image {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px;
+}
+
+.input-image {
+    height: 30px;
+    background-color: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.input-image label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-image label p {
+    border-radius: 5px;
+    height: 100%;
+    background-color: #c4c4c4;
+    padding: 0 5px;
+    border: 1px solid #c4c4c4;
+}
+
+.button-form-blog {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.button-form-blog button {
+    background-color: #111727;
+    color: #c4c4c4;
+    border: none;
+    padding: 5px 13px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* form blog end */
+
+/* project */
+.container-project {
+    background-color: white;
+    margin-top: 90px;
+    padding: 40px;
+}
+
+.container-project h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.post-blog {
+    width: 80%;
+    margin: 50px auto;
+    /* background-color: blueviolet; */
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center; */
+    flex-wrap: wrap;
+    
+}
+
+.card-blog {
+    /* background-color: blue; */
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.content-blog {
+    background-color: white;
+    width: 90%;
+    margin: 15px auto;
+    font-size: 10px;
+    padding-bottom: 15px;
+}
+
+/* .thumbnail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.thumbnail img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.title-blog {
+    margin-top: 15px;
+    /* background-color: yellow; */
+}
+
+.description-output {
+    margin-top: 20px;
+}
+
+.technologies-output {
+    margin-top: 20px;
+    display: flex;
+}
+
+.technologies-output img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.opsi-blog{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-blog {
+    width: 49.5%;
+    height: 20px;
+    background-color: #111727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.edit-blog a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(238, 237, 237);
+}
+
+.delete-blog {
+    width: 49.5%;
+    height: 20px;
+    background-color: #111727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.delete-blog a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(238, 237, 237);
+}
+
+
+.title-blog h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.title-blog p {
+    color: #514a4a;
+}
+/* project end */

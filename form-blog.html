@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="myProject"><a href="form-blog.html">My Project</a></li>
+      </ul>
+
+      <div class="contact">
+        <button>
+          <a href="contact.html">Contact Me</a>
+        </button>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- form -->
+    <div class="container-form">
+      <h2>ADD MY PROJECT</h2>
+      <form class="form-blog" onsubmit="getData(event)">
+        <div class="name">
+          <label for="project-name" class="form-label">Project Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="project-name"
+            name="name"
+          />
+        </div>
+        <div class="date">
+          <div class="start-date">
+            <label for="start-date" class="form-label">Start Date</label>
+            <input type="date" class="form-control" id="start-date" />
+          </div>
+          <div class="end-date">
+            <label for="end-date" class="form-label">End Date</label>
+            <input type="date" class="form-control" id="end-date" />
+          </div>
+        </div>
+        <div class="description">
+          <label for="description-box" class="form-label">Description</label>
+          <textarea
+            class="form-control"
+            id="description-box"
+            cols="30"
+            rows="3"
+            style="resize: none"
+            name="description"
+          ></textarea>
+        </div>
+        <div class="checkbox">
+          <p>Technologies</p>
+          <div class="form-checkbox">
+            <div class="form-checkbox1">
+              <div class="nodeJs">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="nodejs"
+                  class="form-check-input"
+                />
+                <label for="nodejs" class="form-check-label">Node JS</label>
+              </div>
+              <div class="reactJs">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="reactjs"
+                  class="form-check-input"
+                />
+                <label for="reactjs" class="form-check-label">React JS</label>
+              </div>
+            </div>
+            <div class="form-checkbox2 ms-5">
+              <div class="nextJs">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="nextjs"
+                  class="form-check-input"
+                />
+                <label for="nextjs" class="form-check-label">Next JS</label>
+              </div>
+              <div class="typeScript">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="typescript"
+                  class="form-check-input"
+                />
+                <label for="typescript" class="form-check-label"
+                  >TypeScript</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <label for="upload-image">Upload Image</label>
+          <div class="input-image">
+            <label for="input-image">
+              <p>choose</p>
+              <img src="assets/img/file.png" alt="file" />
+            </label>
+            <input type="file" id="input-image" hidden />
+          </div>
+        </div>
+        <div class="button-form-blog">
+          <button class="button">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- form end -->
+
+    <!-- project -->
+    <div class="container-project">
+      <h1>My Project</h1>
+
+      <div class="post-blog" id="post-blog">
+        <div class="card-blog">
+          <div class="content-blog">
+            <div class="thumbnail">
+              <img src="assets/img/thumbnail.jpg" alt="" />
+            </div>
+
+            <div class="title-blog">
+              <h3><a href="blog.html">Dumbways Mobile App</a></h3>
+              <p>durasi : 3 bulan</p>
+            </div>
+
+            <div class="description-output">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit,
+              dolorum blanditiis amet praesentium fuga perferendis magnam
+              voluptatum illo atque corporis consequuntur facilis nisi totam,
+              debitis fugiat doloribus obcaecati at nostrum.
+            </div>
+
+            <div class="technologies-output">
+              <div class="nodejs">
+                <img src="assets/img/nodejs.png" alt="" />
+              </div>
+              <div class="nextjs">
+                <img src="assets/img/nextjs.png" alt="" />
+              </div>
+              <div class="reactjs">
+                <img src="assets/img/reactjs.png" alt="" />
+              </div>
+              <div class="typescript">
+                <img src="assets/img/typescript.png" alt="" />
+              </div>
+            </div>
+
+            <div class="opsi-blog">
+              <div class="edit-blog">
+                <a href="">edit</a>
+              </div>
+
+              <div class="delete-blog">
+                <a href="">delete</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- project end -->
+
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

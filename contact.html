@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Me</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="myProject"><a href="form-blog.html">My Project</a></li>
+      </ul>
+
+      <div class="contact">
+        <button>
+          <a href="contact.html">Contact Me</a>
+        </button>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="container-form">
+      <h1>GET IN TOUCH</h1>
+
+      <form style="text-align: left">
+        <div class="name">
+          <label for="name" style="font-size: 20px; font-weight: 700px"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            style="
+              width: 100%;
+              box-sizing: border-box;
+              padding: 8px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              background: #f4f3f3;
+              border: 1px solid #c4c4c4;
+              border-radius: 8px;
+              box-shadow: 0px 0px 2px;
+            "
+          />
+        </div>
+
+        <div class="email">
+          <label for="email" style="font-size: 20px; font-weight: 700px"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            style="
+              width: 100%;
+              box-sizing: border-box;
+              padding: 8px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              background: #f4f3f3;
+              border: 1px solid #c4c4c4;
+              border-radius: 8px;
+              box-shadow: 0px 0px 2px;
+            "
+          />
+        </div>
+
+        <div class="phone">
+          <label for="phone" style="font-size: 20px; font-weight: 700px"
+            >Phone Number</label
+          >
+          <input
+            type="text"
+            id="phone"
+            style="
+              width: 100%;
+              box-sizing: border-box;
+              padding: 8px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              background: #f4f3f3;
+              border: 1px solid #c4c4c4;
+              border-radius: 8px;
+              box-shadow: 0px 0px 2px;
+            "
+          />
+        </div>
+
+        <div class="subject">
+          <label for="subject" style="font-size: 20px; font-weight: 700px"
+            >Subject</label
+          >
+          <select
+            id="subject"
+            style="
+              width: 100%;
+              box-sizing: border-box;
+              padding: 8px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              font-size: 17px;
+              background: #f4f3f3;
+              border: 1px solid #c4c4c4;
+              border-radius: 8px;
+              box-shadow: 0px 0px 2px;
+            "
+          >
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Fullstack</option>
+          </select>
+        </div>
+
+        <div class="message">
+          <label for="message" style="font-size: 20px; font-weight: 700px"
+            >Your Message</label
+          >
+          <textarea
+            id="message"
+            rows="3"
+            cols="10"
+            style="
+              resize: none;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 8px;
+              margin-top: 5px;
+              margin-bottom: 20px;
+              font-size: 17px;
+              background: #f4f3f3;
+              border: 1px solid #c4c4c4;
+              border-radius: 8px;
+              box-shadow: 0px 0px 2px;
+            "
+          ></textarea>
+        </div>
+
+        <div class="submit" style="text-align: right">
+          <button
+            style="
+              padding: 5px 25px;
+              font-size: 13px;
+              background: #111727;
+              border-radius: 20px;
+              border: none;
+              color: #fff;
+              cursor: pointer;
+              text-align: right;
+            "
+            type="button"
+            onclick="submitData()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/js/contact.js"></script>
+  </body>
+</html>
